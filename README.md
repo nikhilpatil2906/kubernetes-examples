@@ -3,6 +3,7 @@
 ## Requirements
 
 - Must have docker and kubernetes installed in you system
+- Must have some important packages to run kubernetes application on local eg. metrics-server. You can check it by running  "kubectl -n kube-system top pod"
 
 ### Enviroment which I am using to build and run the application:
 
