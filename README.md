@@ -20,6 +20,7 @@ To Tag and Push a Docker Image to AWS ECR
 
   >
     docker tag nodejs-test:latest <<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
+  >
     docker push <<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
 
 
