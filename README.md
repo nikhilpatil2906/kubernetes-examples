@@ -9,7 +9,7 @@
 
 - I am using Mac.
 - AWS ECR to push dockerimage and pull it back from ECR.
-- Uses docker-desktop(daemon) to build, run and push image.
+- Uses docker-desktop(daemon) to build, run ,test and push image.
 
 ### For docker
 
