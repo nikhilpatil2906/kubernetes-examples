@@ -66,4 +66,4 @@ Output
 ![Image of all running services](/images/list_of_all.png)
 
 
-![Image of all running Application](/images/application_running.png)
+![Image of all running Application](/images/nodejs.png)
