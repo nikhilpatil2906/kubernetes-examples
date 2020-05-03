@@ -1,6 +1,6 @@
 # Paytm Kubernetes assignment
 
-## localhost Requirements
+## Requirements
 
 - Must have docker and kubernetes installed in your system
 - Must have some important packages to run kubernetes application on local eg. metrics-server. You can check it by running  "kubectl -n kube-system top pod"
