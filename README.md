@@ -30,10 +30,15 @@ To Tag and Push a Docker Image to AWS ECR
 
 - Please replace the name with actual value
   >
-    SECRET_NAME > - Name_OF_Secrete (eg. my-secrets)
-    AWS_ACCOUNT_ID > - Your_AWS_Account_ID (eg. 12344XXXXXXX)
-    AWS_REGION > - Your_AWS_Region_name (eg. ap-southeast-1)
-    EMAIL > - Your_EMAIL_ID (Optional) (eg. abc@gmail.com)
+    SECRET_NAME
+  > - Name_OF_Secrete (eg. my-secrets)
+    AWS_ACCOUNT_ID
+  > - Your_AWS_Account_ID (eg. 12344XXXXXXX)
+    AWS_REGION
+  > - Your_AWS_Region_name (eg. ap-southeast-1)
+    EMAIL
+  > - Your_EMAIL_ID (Optional) (eg. abc@gmail.com)
+  
 
 - To add a secrets, If you want to pull a image from AWS ECR
 
