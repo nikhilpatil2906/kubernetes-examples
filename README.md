@@ -57,11 +57,13 @@ To get LIST of all pods,deployments,services,hpa
 
 To see the application is running or not  
 
-  * you can use curl call or go to the browser and see the result.
+  * you can make a curl call using terminal or go to the browser and see the result.
     - curl localhost:3000
     - Go to browser and search localhost:3000
 
 Output
 
 ![Image of all running services](/images/list_of_all.png)
+
+
 ![Image of all running Application](/images/application_running.png)
