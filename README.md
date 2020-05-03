@@ -50,11 +50,18 @@ Kubernetes deployment
 
 ## TO test the Created Enviroment
 
-TO get LIST of all pods,deployments,services,hpa
+To get LIST of all pods,deployments,services,hpa
 
   >
       kubectl get secrets,pods,deployments,svc,hpa  -owide
 
+To see the application is running or not  
+
+  * you can use curl call or go to the browser and see the result.
+    - curl localhost:3000
+    - Go to browser and search localhost:3000
+
 Output
 
 ![Image of all running services](/images/list_of_all.png)
+![Image of all running Application](/images/application_running.png)
