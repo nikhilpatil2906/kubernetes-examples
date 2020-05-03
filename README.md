@@ -18,9 +18,10 @@ To build a Docker image
 
 To Tag and Push a Docker Image to AWS ECR
 
-  > docker tag nodejs-test:latest <<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
+  >
+    docker tag nodejs-test:latest <<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
+    docker push <<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
 
-  > docker push <<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
 
 ### Kubernetes
 
@@ -35,7 +36,7 @@ Please replace the name with actual value
   *  AWS_REGION - Your_AWS_Region_name (eg. ap-southeast-1)
   *  EMAIL - Your_EMAIL_ID (Optional) (eg. abc@gmail.com)
 
-- To add a secrets, If you want to pull a image from AWS ECR
+To add a secrets, If you want to pull a image from AWS ECR
 
   > kubectl create secret docker-registry $SECRET_NAME --docker-server=https://<<AWS_ACCOUNT_ID>>.dkr.ecr.us-east-1.amazonaws.com --docker-username=AWS --docker-password="${TOKEN}" --docker-email="${EMAIL}"
 
@@ -46,3 +47,14 @@ Kubernetes deployment
     kubectl create -f kubernetes/deployments.yml
     kubectl create -f kubernetes/service.yml
     kubectl create -f kubernetes/autoscaler.yml
+
+## TO test the Created Enviroment
+
+TO get LIST of all pods,deployments,services,hpa
+
+  >
+      kubectl get secrets,pods,deployments,svc,hpa  -owide
+
+Output
+
+![Image of all running services](/images/list_of_all.png)

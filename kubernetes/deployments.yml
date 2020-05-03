@@ -1,0 +1,37 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: sample-app
+  labels:
+    app: sample-app
+spec:
+  replicas: 7
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+       maxSurge: 2
+       maxUnavailable: 2
+  selector:
+    matchLabels:
+      app: sample-app
+  template:
+    metadata:
+      labels:
+        app: sample-app
+    spec:
+      imagePullSecrets:
+      - name: my-secrets
+      priorityClassName: high-priority
+      containers:
+      - name: sample-app
+        image: 540798973460.dkr.ecr.us-east-1.amazonaws.com/nodejs:latest
+        resources:
+          limits:
+            cpu: 100m
+            memory: "100Mi"
+          requests:
+            cpu: 20m
+            memory: 50Mi
+        ports:
+        - containerPort: 3000
+          name: sample-app
