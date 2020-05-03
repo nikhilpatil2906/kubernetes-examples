@@ -63,7 +63,7 @@ To see the application is running or not
     - curl localhost:3000
     - Go to browser and search localhost:3000
 
-Output
+## Output
 
 ![Image of all running services](/images/list_of_all.png)
 
